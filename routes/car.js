@@ -5,7 +5,7 @@ const Car = require("../models/Car.js");
 router.get("/", async (req, res) => {
   try {
     const page = Math.max(parseInt(req.query.page) || 1, 1);
-    const limit = Math.max(parseInt(req.query.limit) || 12, 1);
+    const limit = Math.max(parseInt(req.query.limit) || 9, 1);
     const skip = (page - 1) * limit;
 
     const filter = {};
