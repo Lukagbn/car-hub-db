@@ -7,7 +7,6 @@ const CarSchema = new mongoose.Schema({
   rating: { type: Number, default: 0 },
   createdAt: { type: Date, default: Date.now },
   images: [{ type: String, required: true }],
-  thumbnail_img: [{ type: String, required: true }],
   price: { type: Number, required: true },
   discount: { type: Number, required: true },
   car_type: { type: String, reqired: true },
